@@ -95,17 +95,6 @@
     color: gray;
 }
 
-.main-top-bar{
-   display: flex;
-   flex-direction: row;
-   gap: 1rem;
-   padding: 1rem;
-}
-
-.main-container{
-    
-}
-
 .first-row{
     display: flex;
     justify-content: space-between;
@@ -126,44 +115,78 @@
     color: gray;
 }
 
-.block{
-    height: 148px;
-    width: 350px;
+.main-top-bar .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
     padding: 1rem;
 }
 
-.text{
-    padding: 2rem;
+.card{
+    display: flex;
+    justify-content: space-between;
+    height: 148px;
+    width: 25%;
     color: white;
 }
 
-.first-block{
-    display: flex;
-    align-items: center;
-    background-color: #da4770;
+.card-text{
+    width: 75%;
+    margin: 15px 0;
+    padding: 1.5rem;
+    font-size: 20px;
 }
 
-.second-block{
+.card-icon{
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #66619e;
+    width: 25%;
+ }
+
+.card-first{
+    background-color: rgb(242, 79, 124);
 }
 
-.third-block{
-    display: flex;
-    align-items: center;
-    background-color: #3d7bcd;
+.card-second{
+    background-color: rgb(113, 108, 176);
 }
 
-.fourth-block{
-    display: flex;
-    align-items: center;
-    background-color: #35adb0;
+.card-third{
+    background-color: rgb(51, 176, 224);
+}
+
+.card-fourth{
+    background-color: rgb(59, 192, 195);
+}
+
+.card-icon-first{
+    background-color: rgba(245, 170, 191, 0.87);
+   
+}
+
+.card-icon-second{
+    background-color: rgba(151, 148, 190, 0.802);
+}
+
+.card-icon-third{
+    background-color: rgba(133, 207, 236, 0.786);
+}
+
+.card-icon-fourth{
+    background-color: rgba(165, 231, 231, 0.816);
 }
 
 .img{
     font-size: 40px;
     color: white;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 1rem;
 }
 
 .container-first-row{
@@ -182,7 +205,7 @@
 
 .second-col{
     height: 553px;
-    width: 462px;
+    width: 40%;
     padding: 0.3rem;
     margin: 1rem;
     background-color: chartreuse;
@@ -194,39 +217,156 @@
     background-color: blue;
 }
 
-.container-second-row{
+
+.chat-content{
     display: flex;
-    flex-direction: row;
-    padding: 0.3rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
-.third-col{
-    height: 442px;
-    width: 496px;
-    padding: 0.3rem;
-    margin: 1rem;
-  
+.chat-container{
+    width: 35%;
+    height: 500px;
+    padding: 1rem;
+   
 }
 
-.fourth-col{
-    height: 508px;
-    width: 905px;
-    padding: 0.3rem;
-    margin: 1rem;
-    background-color: blueviolet;
+.chat-container-row{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 }
 
-.btn-arrow,
-.btn-less,
-.btn-close{
-    color: #6c757d;
-    font-size: 18px;
+.chat-col-1{
+    color: gray;
+}
+
+.chat-col-2{
+    color: gray;
     cursor: pointer;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow: auto;
 }
 
 .woman-avatar{
     height: 30px;
     width: 30px;
-    border-radius: 30px;
+    border-radius: 100%;
+    background-color: pink;
 }
 
+.man-avatar{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.chat .chat-row-1 .chat-avatar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.chat .chat-row-1 .chat-avatar .woman-avatar
+.chat .chat-row-3 .chat-avatar .woman-avatar
+.chat .chat-row-5 .chat-avatar .woman-avatar{
+    border: 1px solid transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    
+}
+
+.chat-row-1,
+.chat-row-3,
+.chat-row-5{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.chat .chat-row-1 .chat-text,
+.chat .chat-row-3 .chat-text,
+.chat .chat-row-5 .chat-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 1%;
+    border: 1px solid transparent;
+    padding: 1rem;
+    width: 200px;
+    color: rgb(112, 128, 154);
+    background-color: rgba(155, 158, 164, 0.817);
+}
+
+.chat .chat-row-2,
+.chat .chat-row-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.chat .chat-row-2 .chat-text,
+.chat .chat-row-4 .chat-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 1%;
+    border: 1px solid transparent;
+    padding: 1rem;
+    width: 200px;
+    color: rgb(59, 192, 195);
+    background-color: rgba(171, 213, 214, 0.748);
+}
+
+.chat .chat-row-2 .chat-avatar .man-avatar
+.chat .chat-row-4 .chat-avatar .man-avatar{
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    margin-left: 1rem;
+}
+
+.container-table{
+    display: flex;
+    justify-content: space-between;
+    height: 508px;
+    width: 65%;
+    padding: 1rem;
+    background-color: blueviolet;
+    margin-bottom: 1rem;
+}
+
+.container-table-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 65%;
+    background-color: bisque;
+}
+
+.table-list-item{
+    display: flex;
+    
+}
+
+.table-list{
+    display: flex;
+}
+
+.table{
+    display: flex;
+}
