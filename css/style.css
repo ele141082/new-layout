@@ -340,9 +340,7 @@
 }
 
 .container-table{
-    display: flex;
-    justify-content: space-between;
-    height: 508px;
+   height: 508px;
     width: 65%;
     padding: 1rem;
     background-color: blueviolet;
