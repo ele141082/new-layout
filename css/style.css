@@ -348,25 +348,3 @@
     background-color: blueviolet;
     margin-bottom: 1rem;
 }
-
-.container-table-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    width: 65%;
-    background-color: bisque;
-}
-
-.table-list-item{
-    display: flex;
-    
-}
-
-.table-list{
-    display: flex;
-}
-
-.table{
-    display: flex;
-}
